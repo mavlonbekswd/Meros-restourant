@@ -1,0 +1,247 @@
+.chef{
+    margin-top:100px;
+    width: 1440px;
+    height: 600px;
+    border:$border;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/pages/Asosiy/img/Vector\ 15.png);
+   background-repeat: no-repeat;
+
+   .container{
+    position: absolute;
+    top: 95%;
+    left: 44%;
+    // position: relative;
+    button {
+        top: 30%;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        vertical-align: middle;
+        text-decoration: none;
+        background: transparent;
+        padding: 0;
+        font-size: inherit;
+        font-family: $inter;
+        display: flex;
+        align-items: center;
+        &.learn-more {
+          width: 12rem;
+          height: auto;
+          .circle {
+            @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+            position: relative;
+            display: block;
+            margin: 0;
+            width: 3rem;
+            height: 3rem;
+            background:$yellow;
+            border-radius: 1.625rem;
+            .icon {
+              @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              background: rgb(0, 0, 0);
+              &.arrow {
+                @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+                left: 0.625rem;
+                width: 1.125rem;
+                height: 0.125rem;
+                background: none;
+                &::before {
+                  position: absolute;
+                  content: '';
+                  top: -0.25rem;
+                  right: 0.0625rem;
+                  width: 0.625rem;
+                  height: 0.625rem;
+                  border-top: 0.125rem solid #ffffff;
+                  border-right: 0.125rem solid #ffffff;
+                  transform: rotate(45deg);
+                }
+              }
+            }
+          }
+          .button-text {
+            @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0.75rem 0;
+            margin: 0 0 0 1.85rem;
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+            line-height: 1.6;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+        &:hover {
+          .circle {
+            width: 100%;
+            .icon {
+              &.arrow {
+              background: rgb(255, 255, 255);
+              transform: translate(1rem, 0);
+              }
+            }
+          }
+          .button-text {
+            color: rgb(255, 255, 255);
+          }
+        }
+      } 
+}
+    img{
+        position: absolute;
+        right: 0%;
+        top: 99%;
+        width: 300.097px;
+height: 400.295px;
+    }
+    .chef-text{
+        width: 600px;
+        height: 15%;
+        border: $border;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        h3{
+            color: var(--Primary-color, #FF9F0D);
+font-family: Great Vibes;
+font-size: 42px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 125% */
+        }
+        h2{color: var(--fffffff, #FFF);
+            font-kerning: none;
+            
+            /* Headingt 2/48 */
+            font-family: $inter;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 56px;
+            span{
+                color: var(--Primary-color, #FF9F0D);
+font-kerning: none;
+
+/* Headingt 2/48 */
+font-family: $inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 56px; /* 116.667% */
+            }
+        }
+    }
+    
+    .top-ul{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        li{
+            width: 20%;
+            height: 90%;
+            border: $border;
+            background-color: rgb(124, 132, 139);
+            background-image: url(../../../pages/Asosiy/img/person.svg);
+            background-size: cover;
+            
+            // img{
+            //     width: 100%;
+            //     height: 100%;
+            // }
+            .content {
+                position: relative;
+                width: 95%;
+                max-width: 400px;
+                margin: auto;
+                overflow: hidden;
+              }
+              
+              .content .content-overlay {
+                background: rgba(0,0,0,0.7);
+                position: absolute;
+                height: 99%;
+                width: 100%;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                opacity: 0;
+                -webkit-transition: all 0.4s ease-in-out 0s;
+                -moz-transition: all 0.4s ease-in-out 0s;
+                transition: all 0.4s ease-in-out 0s;
+              }
+              
+              .content:hover .content-overlay{
+                opacity: 1;
+              }
+              
+              .content-image{
+                width: 100%;
+                height: 100%;
+              }
+              
+              .content-details {
+                position: absolute;
+                text-align: center;
+                // padding-left: 1em;
+                // padding-right: 1em;
+                width: 100%;
+                top: 50%;
+                left: 50%;
+                opacity: 0;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                -moz-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
+              }
+              
+              .content:hover .content-details{
+                top: 50%;
+                left: 50%;
+                opacity: 1;
+              }
+              
+              .content-details h3{
+                color: #fff;
+                font-weight: 500;
+                letter-spacing: 0.15em;
+                margin-bottom: 0.5em;
+               font-family: $inter;
+              }
+              
+              .content-details p{
+                color: $yellow;
+                font-size: 1.3em;
+                letter-spacing: 4px;
+                font-family: $vibes;
+              }
+              
+              .fadeIn-bottom{
+                top: 80%;
+              }
+        }
+    }
+
+}

@@ -1,0 +1,35 @@
+.customers{
+    width: 1450px;
+    height: 2200px;
+    border: $border;
+    background-image: url(/pages/Asosiy/img/Vector\ 14.png) ;
+    // margin-top: 50px;
+    background-size: cover;
+    .hapy-customers{
+        margin-top: 100px;
+        width: 1000px;
+        height: 500px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .posting{
+        margin-top: 100px;
+        width: 500px;
+        height: 400px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .commentss{
+        margin-top: 100px;
+        width: 1000px;
+        height: 900px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

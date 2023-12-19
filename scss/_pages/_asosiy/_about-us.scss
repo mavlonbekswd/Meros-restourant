@@ -1,0 +1,239 @@
+.home-main{
+    width: 1450px;
+    height: 4500px;
+    border: $border;
+    background-image: url(/pages/Asosiy/img/Vector\ 14.png) ;
+    margin-top: 200px;
+    background-size: cover;
+    
+    &-aboutus{
+        width: 80%;
+        height: 600px;
+        border: $border;
+        display: flex;
+        background-image: url(/pages/Asosiy/img/Vector\ 15.png) ;
+       
+
+        &-txt{
+            width: 50%;
+            height: 100%;
+            border: $border;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 40px;
+            position: relative;
+        .chek1{
+            position: absolute;
+            top: 57.5%;
+            left: 0%;
+        }
+        .chek2{
+            position: absolute;
+            top: 75.5%;
+            left: 0%;
+        }.check-3{
+            position: absolute;
+            top: 66.5%;
+            left: 0%;
+        }
+         h6{
+            color: $yellow;
+            font-family: $vibes;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px; /* 125% */
+            width: 580px;
+         }
+         h3{color: var(--fffffff, #FFF);
+            font-kerning: none;
+            
+            /* Headingt 2/48 */
+            font-family: $inter;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 56px;
+            width: 480px;
+            margin-left: 0px;
+            span{
+                color: var(--Primary-color, #FF9F0D);
+            font-kerning: none;
+
+            /* Headingt 2/48 */
+            font-family: $inter;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 56px; /* 116.667% */
+            
+            }
+         }
+         h4{
+            color: var(--fffffff, #FFF);
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+         }
+         p{
+            color: var(--fffffff, #FFF);
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            width: 526px;
+
+         }
+         .container{
+            position: absolute;
+            top: 82%;
+            left: 0%;
+            button {
+                top: 30%;
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+                outline: none;
+                border: 0;
+                vertical-align: middle;
+                text-decoration: none;
+                background: transparent;
+                padding: 0;
+                font-size: inherit;
+                font-family: $inter;
+                display: flex;
+                align-items: center;
+                &.learn-more {
+                  width: 12rem;
+                  height: auto;
+                  .circle {
+                    @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+                    position: relative;
+                    display: block;
+                    margin: 0;
+                    width: 3rem;
+                    height: 3rem;
+                    background:$yellow;
+                    border-radius: 1.625rem;
+                    .icon {
+                      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+                      position: absolute;
+                      top: 0;
+                      bottom: 0;
+                      margin: auto;
+                      background: rgb(0, 0, 0);
+                      &.arrow {
+                        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+                        left: 0.625rem;
+                        width: 1.125rem;
+                        height: 0.125rem;
+                        background: none;
+                        &::before {
+                          position: absolute;
+                          content: '';
+                          top: -0.25rem;
+                          right: 0.0625rem;
+                          width: 0.625rem;
+                          height: 0.625rem;
+                          border-top: 0.125rem solid #ffffff;
+                          border-right: 0.125rem solid #ffffff;
+                          transform: rotate(45deg);
+                        }
+                      }
+                    }
+                  }
+                  .button-text {
+                    @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    padding: 0.75rem 0;
+                    margin: 0 0 0 1.85rem;
+                    color: rgb(0, 0, 0);
+                    font-weight: 700;
+                    line-height: 1.6;
+                    text-align: center;
+                    text-transform: uppercase;
+                  }
+                }
+                &:hover {
+                  .circle {
+                    width: 100%;
+                    .icon {
+                      &.arrow {
+                      background: rgb(255, 255, 255);
+                      transform: translate(1rem, 0);
+                      }
+                    }
+                  }
+                  .button-text {
+                    color: rgb(255, 255, 255);
+                  }
+                }
+              } 
+        }
+        }
+        &-img{
+            width: 50%;
+            height: 100%;
+            border: $border;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 10px;
+                background-color: #000000;
+                padding: 10px;
+                width: 550px;
+                height: 550px;
+              }
+              
+              .grid-container > div {
+                background-color: rgba(0, 0, 0, 0.8);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 20px;
+              }
+              
+              .item1 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                width: 100%;
+                height: 70%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+              }
+              .item2 {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                width: 100%;
+                height: 100%;
+                margin-top: -80px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+              }
+              .item3 {
+                margin-top: -80px;
+                width: 100%;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+              }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.comments{
+    margin-top: 100px;
+    display: flex;
+    width: 998px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+    height: 480px;
+    position: relative;
+    border: 2px  ($yellow) dotted;
+    .next-l{
+        position: absolute;
+        top: 40%;
+        left: 96%;
+        color: $yellow;
+    }
+    .next-l:hover{
+        color: white;
+    }
+    .next-r{
+        position: absolute;
+        top: 40%;
+        left: 3%;
+        color: $yellow;
+    }
+    .next-r:hover{
+        color: white;
+    }
+    
+    h1{
+        margin-top: 40px;
+        color:$yellow;
+text-align: center;
+font-family: $vibes;
+font-size: 35px;
+font-style: normal;
+font-weight: 500;
+line-height: 77.1%; /* 11.565px */
+letter-spacing: 4.05px;
+
+    }
+    h3{
+        color: #FFF;
+text-align: center;
+font-family: $inter;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 77.1%; /* 30.84px */
+span{
+    color: $yellow;
+}
+    }
+    .quote{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        width: 96px;
+height: 74px;
+color: $yellow;
+    }
+    p{
+        color: #FFF;
+text-align: center;
+font-family: Cormorant Infant;
+font-size: 25px;
+font-style: italic;
+font-weight: 400;
+line-height: 146.5%; /* 36.625px */
+width: 815px;
+    }
+    .comments-img{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+       border-color: $yellow;
+        background-image: url(/pages/Asosiy/img/com-img.png);
+        background-size: cover;
+        
+    }
+     
+    h2{
+        color: #FFF;
+text-align: center;
+font-family: $inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 77.1%; /* 23.13px */
+    }
+    h4{
+        color:$yellow;
+text-align: center;
+font-family: $vibes;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 126.5%; /* 25.3px */
+    }
+    
+}
